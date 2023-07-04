@@ -1,0 +1,183 @@
+/* 
+----SYSTEM----
+--01 Typography system:
+-font weight:
+font-size-system (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+default:400
+
+-line-height:
+default:1
+
+--02 Colors::
+
+primaty: #ae3ec9
+secondary:#53be93
+
+Tints:#7a2b8d ,#571f65
+shades:#efd8f4
+Grays:#555,#333
+
+link hober color: #7a2b8d
+
+
+--03- Shadows:
+
+--04- Border redious:
+
+default:9px
+
+--05 white-space:
+-spacing system (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+/* ___________________________________________________________ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: #555;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  margin-bottom: 3.2rem;
+}
+.heading-tartiary {
+  font-size: 3rem;
+  line-height: 1.1rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 2.4rem;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #888;
+  margin-bottom: 2.2rem;
+}
+.btn {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: inherit;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  background: none;
+  border: none;
+  text-align: center;
+  border-radius: 0.4rem;
+}
+.btn-fill,
+.btn-fill:link,
+.btn-fill:visited {
+  background-color: #ae3ec9;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.btn-fill:hover,
+.btn-fill:active {
+  background-color: #7a2b8d;
+}
+.btn-blank,
+.btn-blank:link,
+.btn-blank:visited {
+  cursor: pointer;
+  border: 0.1rem solid transparent;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.btn-blank:hover,
+.btn-blank:active {
+  border: 0.1rem solid #ae3ec9;
+  background-color: #efd8f4;
+}
+.margin-b-sm {
+  margin-bottom: 2.4rem;
+}
+.margin-b-vs {
+  margin-bottom: 1.2rem;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 4.8rem;
+}
+.grid--1-col {
+  grid-template-columns: 1fr;
+}
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+.project {
+  position: relative;
+}
+.heighlight {
+  color: #7a2b8d;
+  font-weight: 600;
+}
+.Hover {
+  position: absolute;
+  top: 5.4rem;
+}
+.text-center {
+  text-align: center;
+}
+
+.visit-link {
+  padding: 1.2rem 2.4rem;
+}
+
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+/* style whats app  */
+.whatsapp-chat {
+  position: fixed;
+  bottom: 2.4rem;
+  right: 4.2rem;
+  text-align: right;
+  transition: all 0.5s;
+}
+.whatsapp_logo {
+  width: 12%;
+  border-radius: 0.4rem;
+}

@@ -1,0 +1,248 @@
+/* COMPATABLE FOR ALL SCREEN SIZE */
+
+/* Add media query for the scree size(1350 px)[smaller laptop] */
+@media (max-width: 85em) {
+  .whatsapp-chat {
+    right: 3rem;
+  }
+  .whatsapp_logo {
+    width: 11%;
+  }
+}
+/* Add media query for the scree size(1296 px)[smaller laptop] */
+
+@media (max-width: 81em) {
+  .whatsapp-chat {
+    right: 1.2rem;
+  }
+  .whatsapp_logo {
+    width: 10%;
+  }
+}
+/* Add media query for the scree size(1152 px)[bigger tablets] */
+
+@media (max-width: 72em) {
+  .whatsapp-chat {
+    right: 0.5rem;
+  }
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* Add media query for the scree size(1056 px)[mediam size tablets] */
+
+@media (max-width: 66em) {
+  .grid--3-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    padding: 0 4.8rem;
+  }
+  .project-cart {
+    width: 75%;
+    justify-self: center;
+  }
+  .project-cart:last-child {
+    width: 37.5%;
+    grid-column: 1/-1;
+  }
+  .inp,
+  textarea {
+    width: 100%;
+  }
+  .section-contact .container {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+}
+/* Add media query for the scree size(944 px)[smaller tablets] */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .section-contact .grid--2-col {
+    grid-template-columns: 40% 60%;
+  }
+  .inp,
+  textarea {
+    width: 85%;
+  }
+  .skill-text {
+    font-size: 1.6rem;
+  }
+  hero-img {
+    height: 100% !important;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .section-hero .heading-secondary:first-child {
+    font-size: 5.2rem;
+  }
+}
+/* Add media query for the scree size(768 px)[bigger mobile screen / vartically ] */
+@media (max-width: 48em) {
+  .project-cart {
+    width: 100%;
+  }
+  .project-cart:last-child {
+    width: 50%;
+    grid-column: 1/-1;
+  }
+  .aboutMe-container {
+    grid-template-columns: 1fr;
+  }
+  .section-contact .grid--2-col {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-box {
+    box-shadow: 0 0 2.4rem 4.8rem rgba(0, 0, 0, 0.03);
+  }
+  .heading-secondary {
+    font-size: 3rem;
+  }
+  .section-hero .heading-secondary:first-child {
+    font-size: 4.4rem;
+  }
+  .heading-tartiary {
+    font-size: 2.4rem;
+  }
+  .btn {
+    font-size: 2.2rem;
+  }
+
+  /* Implimanting mobile navigation bar */
+  .nav-items {
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    width: 75%;
+    height: 100vh;
+    background-color: rgb(76, 185, 142, 0.87);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    z-index: 99;
+    border-radius: 0.2rem;
+    gap: 5.2rem;
+    align-items: center;
+    padding: 9.6rem;
+    /* make invisible form the page */
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-icon-box {
+    display: flex;
+  }
+  .icon-hambarger {
+    display: block;
+  }
+  .nav-open .icon-hambarger {
+    display: none;
+  }
+  .nav-open .icon-cross {
+    display: block;
+  }
+  .nav-open .nav-items {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-links:link,
+  .nav-links:visited {
+    font-size: 2.4rem;
+  }
+  .container {
+    padding: 0 3.2rem;
+  }
+}
+/* Add media query for the scree size(608 px)[avarage mobile screen] */
+
+@media (max-width: 38em) {
+  .hero-box {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+  .hero-text {
+    justify-self: center;
+    text-align: center;
+  }
+  .hero-img-box {
+    justify-self: center;
+    width: 60%;
+  }
+  .section-hero {
+    background-position: left;
+  }
+  .inp,
+  textarea {
+    width: 100%;
+  }
+}
+
+/* Add media query for the scree size(512 px)[smaller mobile screen] */
+
+@media (max-width: 32em) {
+  .grid--3-col {
+    grid-template-columns: 1fr;
+  }
+  .project-cart,
+  .project-cart:last-child {
+    width: 85%;
+  }
+  .skill-box {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-text {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+  .container {
+    padding: 0 2.4rem;
+  }
+}
+
+/* Add media query for the scree size(416 px)[ accessabel for the so far smallest screen] */
+
+@media (max-width: 29em) {
+  .Foot-grid--3-col {
+    grid-template-columns: 2fr 1fr;
+  }
+  .footer-section-col:last-child {
+    grid-column: 1/-1;
+  }
+  .section-hero {
+    background-position: center;
+  }
+  .project-cart,
+  .project-cart:last-child {
+    width: 100%;
+  }
+  .hero-img-box {
+    width: 80%;
+  }
+  .btn {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+  .contact-form-box {
+    position: relative;
+    padding-top: 8rem;
+  }
+  .heading-form {
+    position: absolute;
+    top: 3.2rem;
+    left: 2.4rem;
+  }
+}
