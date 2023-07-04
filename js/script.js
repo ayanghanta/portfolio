@@ -72,3 +72,5 @@ Array_nav.forEach((element) => {
     document.querySelector(".header").classList.remove("nav-open");
   });
 });
+
+// ----- ------
