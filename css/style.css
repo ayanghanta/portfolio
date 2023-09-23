@@ -58,10 +58,12 @@ header {
   top: 0;
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  padding-bottom: 1.2rem !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .stick-nav .section-nav {
   padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-bottom: 0rem !important;
 }
 .nav-icon-box {
   display: none;
@@ -271,11 +273,12 @@ header {
   margin-bottom: 2.4rem;
 }
 .project-content {
-  padding: 0 1.6rem 2.4rem 1.6rem;
+  padding: 0rem 1.6rem 2.4rem 1.6rem;
   display: flex;
   flex-direction: column;
   margin-top: auto;
 }
+
 .project-description {
   font-size: 1.6rem;
   line-height: 1.4;
