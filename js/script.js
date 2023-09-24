@@ -1,4 +1,7 @@
 let about_item = Array.from(document.querySelectorAll(".about-item"));
+const yearEl = document.querySelector(".YEAR");
+// UPDATE YEAR
+yearEl.textContent = new Date().getFullYear();
 
 about_item.forEach((element) => {
   element.addEventListener("click", () => {
