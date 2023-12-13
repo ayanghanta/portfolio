@@ -1,59 +1,45 @@
-let about_item = Array.from(document.querySelectorAll(".about-item"));
-const yearEl = document.querySelector(".YEAR");
-// UPDATE YEAR
-yearEl.textContent = new Date().getFullYear();
+"use strict";
+// Tabt Component
+const tabContainer = document.querySelector(".about-items");
+const tabs = document.querySelectorAll(".about-item");
+const contents = document.querySelectorAll(".about-content");
+const navEl = document.querySelector(".section-nav");
 
-about_item.forEach((element) => {
-  element.addEventListener("click", () => {
-    about_item.forEach((element) => {
-      element.classList.remove("see-about-item");
-    });
-    if (element.classList.contains("SkillBar")) {
-      element.classList.add("see-about-item");
-      document.querySelector(".skills-details").classList.remove("hide");
-      document.querySelector(".contacts-details").classList.add("hide");
-      document.querySelector(".education-details").classList.add("hide");
-    } else if (element.classList.contains("EducationBar")) {
-      element.classList.add("see-about-item");
-      document.querySelector(".skills-details").classList.add("hide");
-      document.querySelector(".contacts-details").classList.add("hide");
-      document.querySelector(".education-details").classList.remove("hide");
-    } else if (element.classList.contains("ContactBar")) {
-      element.classList.add("see-about-item");
-      document.querySelector(".skills-details").classList.add("hide");
-      document.querySelector(".contacts-details").classList.remove("hide");
-      document.querySelector(".education-details").classList.add("hide");
-    }
-  });
+tabContainer.addEventListener("click", function (e) {
+  const clickedBtn = e.target.closest(".about-item");
+  if (!clickedBtn) return;
+
+  //hide form the page
+  tabs.forEach((tab) => tab.classList.remove("see-about-item"));
+  contents.forEach((content) => content.classList.add("hide"));
+  //display in page
+  clickedBtn.classList.add("see-about-item");
+  document
+    .querySelector(`.about-content--${clickedBtn.dataset.tab}`)
+    .classList.remove("hide");
 });
 
-// STICKY WHATSAPP CHAT //
+// STICKY MOBILE NAVIGATION & WHATSAPP CHAT //
 
 const heroEl = document.querySelector(".section-hero");
-
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    console.log(ent);
-
-    if (ent.isIntersecting === false) {
-      document.querySelector(".whatsapp-chat").classList.remove("invisible");
-      //for sticky navigation
-      document.querySelector(".header").classList.add("stick-nav");
-    }
-
-    if (ent.isIntersecting === true) {
-      document.querySelector(".whatsapp-chat").classList.add("invisible");
-      //for sticky navigation
-      document.querySelector(".header").classList.remove("stick-nav");
-    }
-  },
-  {
-    root: null,
-    threshold: 0,
+const navHeight = navEl.getBoundingClientRect().height;
+const AddSticky = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    document.querySelector(".header").classList.add("stick-nav");
+    document.querySelector(".whatsapp-chat").classList.remove("invisible");
+  } else {
+    document.querySelector(".header").classList.remove("stick-nav");
+    document.querySelector(".whatsapp-chat").classList.add("invisible");
   }
-);
-obs.observe(heroEl);
+};
+const heroObserver = new IntersectionObserver(AddSticky, {
+  root: null,
+  threshold: 0,
+  rootMargin: `${-navHeight}px`,
+});
+
+heroObserver.observe(heroEl);
 
 // MOBILE NAVIGATION
 
@@ -77,3 +63,10 @@ Array_nav.forEach((element) => {
 });
 
 // ----- ------
+
+// smooth navigation in jS
+document.querySelector(".nav-items").addEventListener("click", function (e) {
+  e.preventDefault();
+  const tragedId = e.target.getAttribute("href");
+  document.querySelector(tragedId).scrollIntoView({ behavior: "smooth" });
+});
