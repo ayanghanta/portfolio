@@ -29,5 +29,5 @@ Welcome to the repository for my personal portfolio website! This project serves
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-portfolio.git
+   git clone https://github.com/ayanghanta/portfolio.git
    ```
