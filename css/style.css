@@ -100,7 +100,7 @@ header {
       rgba(32, 32, 32, 0.6),
       rgba(32, 32, 32, 0.6)
     ),
-    url("../img/heder-bg.jpg");
+    url('../img/heder-bg.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -131,7 +131,7 @@ header {
   z-index: 2;
 }
 .hero-img-box::after {
-  content: "";
+  content: '';
   padding: 45%;
   width: 0%;
   background-color: rgba(243, 217, 250, 0.5);
@@ -302,7 +302,42 @@ header {
   text-align: center;
   font-family: inherit;
 }
-
+.all-project-container {
+  margin-top: 3.2rem !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.see-allProject-btn,
+.hide-allProject-btn {
+  margin-top: 3.2rem !important;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ae3ec9;
+  padding: 0.8rem 1.6rem;
+  border-bottom: 2px solid #9d38b5;
+  transition: all 0.3s;
+}
+.hide-allProject-btn {
+  display: none;
+}
+.show-all-projects .see-allProject-btn {
+  display: none;
+}
+.show-all-projects .hide-allProject-btn {
+  display: inline-block;
+}
+.see-allProject-btn:hover {
+  color: #682579;
+  border-bottom: 2px solid transparent;
+}
+.all-project-cards {
+  transition: all 0.3s;
+}
 /* ##### CONTACT -SECTION ###### */
 /* ########################## */
 .section-contact {
