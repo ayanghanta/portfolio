@@ -14,7 +14,7 @@ Welcome to the repository for my personal portfolio website! This project serves
 
 3. **About Me:** Learn more about who I am, my background, and the skills that make me passionate about what I do.
 
-4. **Services Offered:** Discover the range of services I provide, including [insert specific services, e.g., web development, graphic design, etc.].
+4. **My Projects:** Dive into a variety of my projects, spanning responsive web development to creative graphic design. Explore the diversity of my work.Feel free to check out my projects and delve into the code. Your interest and feedback are appreciated!
 
 5. **Contact Information:** Find multiple ways to get in touch with me, whether you're interested in collaboration, have questions, or just want to say hello.
 
