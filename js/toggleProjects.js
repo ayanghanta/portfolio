@@ -22,8 +22,15 @@ const project2 = {
   description:
     'Modern Watch Center: Fusion of vintage charm and contemporary elegance, showcasing exceptional watch care and curated collections',
 };
-
-const projet3 = {
+const project3 = {
+  name: 'Bro BMI',
+  title: 'Bro BMI',
+  imgeUrl: 'img/projects/bro-bmi.jpg',
+  projectLink: 'https://brobmi.netlify.app/',
+  description:
+    'BroBIM is a convenient React app designed for gyms to help members track their Body Mass Index (BMI) and understand their body type.',
+};
+const project4 = {
   name: 'Expence tracker application',
   title: 'Expense tracker',
   imgeUrl: 'img/projects/cashcare.jpg',
@@ -31,7 +38,8 @@ const projet3 = {
   description:
     'CashCare: this is a simple JavaScript application to track and manage daily expenses.',
 };
-const project4 = {
+
+const project5 = {
   name: 'Rock-Paper-Scissor game',
   title: 'Roc-Paper-Scissor',
   imgeUrl: 'img/projects/rps.jpg',
@@ -40,7 +48,7 @@ const project4 = {
     'Interactive Rock-Paper-Scissors game, test your luck and strategy in this classic JavaScript challenge!',
 };
 
-const allProjects = [project1, project2, projet3, project4];
+const allProjects = [project1, project2, project3, project4, project5];
 
 const createCrads = function (data) {
   return data

@@ -43,10 +43,10 @@
     width: 75%;
     justify-self: center;
   }
-  .project-cart:last-child {
+  /* .project-cart:last-child {
     width: 37.5%;
     grid-column: 1/-1;
-  }
+  } */
   .inp,
   textarea {
     width: 100%;
@@ -87,10 +87,10 @@
   .project-cart {
     width: 100%;
   }
-  .project-cart:last-child {
+  /* .project-cart:last-child {
     width: 50%;
     grid-column: 1/-1;
-  }
+  } */
   .aboutMe-container {
     grid-template-columns: 1fr;
   }
@@ -108,6 +108,7 @@
   }
   .heading-tartiary {
     font-size: 2.4rem;
+    line-height: 1;
   }
   .btn {
     font-size: 2.2rem;
@@ -194,10 +195,10 @@
   .grid--3-col {
     grid-template-columns: 1fr;
   }
-  .project-cart,
+  /* .project-cart,
   .project-cart:last-child {
     width: 85%;
-  }
+  } */
   .skill-box {
     flex-direction: row;
     gap: 2rem;
@@ -225,8 +226,7 @@
   .section-hero {
     background-position: center;
   }
-  .project-cart,
-  .project-cart:last-child {
+  .project-cart {
     width: 100%;
   }
   .hero-img-box {
