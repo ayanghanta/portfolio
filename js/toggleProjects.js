@@ -28,7 +28,7 @@ const project3 = {
   imgeUrl: 'img/projects/bro-bmi.jpg',
   projectLink: 'https://brobmi.netlify.app/',
   description:
-    'BroBIM is a convenient React app designed for gyms to help members track their Body Mass Index (BMI) and understand their body type.',
+    'BroBMI is a convenient React app designed for gyms to help members track their Body Mass Index (BMI) and understand their body type.',
 };
 const project4 = {
   name: 'Expence tracker application',
