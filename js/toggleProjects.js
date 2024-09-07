@@ -57,11 +57,20 @@ const projectRPC = {
   description:
     'Interactive Rock-Paper-Scissors game, test your luck and strategy in this classic JavaScript challenge!',
 };
+const projectSkyCast = {
+  name: 'SkyCast: Weather App',
+  title: 'SkyCast',
+  imgeUrl: 'img/projects/skycast.jpg',
+  projectLink: 'https://rskycast.netlify.app/',
+  description:
+    'SkyCast provides a 7-day weather forecast for any location with a beautiful card design, showing temperature, conditions, and real-time updates.',
+};
 
 const allProjects = [
   projectSmartGlow,
   projectModernWatch,
   projectGoalForge,
+  projectSkyCast,
   projectBroBmi,
   projectCashCare,
   projectRPC,
