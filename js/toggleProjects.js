@@ -66,8 +66,18 @@ const projectSkyCast = {
     'SkyCast provides a 7-day weather forecast for any location with a beautiful card design, showing temperature, conditions, and real-time updates.',
 };
 
+const projectCineSync = {
+  name: 'Movie finding app',
+  title: 'Movie finding app',
+  imgeUrl: 'img/projects/cinesync.jpg',
+  projectLink: 'https://cinesyncc.netlify.app/',
+  description:
+    'CineSync: Search, explore, mark favorites! A user-friendly app with a sleek interface for an enjoyable and seamless cinematic journey.',
+};
+
 const allProjects = [
   projectSmartGlow,
+  projectCineSync,
   projectModernWatch,
   projectGoalForge,
   projectSkyCast,
